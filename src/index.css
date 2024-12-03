@@ -19,7 +19,11 @@
 
 *{
   font-family: var(--font-family);
+  box-sizing: border-box;
+  
 }
+
+
 
 .main-page{
   background-image: var(--background-gradient);
