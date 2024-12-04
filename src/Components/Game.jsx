@@ -1,26 +1,31 @@
-import React, { useReducer, useState } from 'react'
-import RPS from './RPS'
-import RPSL from './RPSL'
-import ChooseTypeGame from './ChooseTypeGame'
+import React from 'react'
+
 
 let initialState = {
-    typeOne : false,
-    typeTwo: false,
-    gameQusetion: false
+  typeOne : false,
+  typeTwo: false,
+  gameQusetion: false
 }
 
-let [{typeOne, typeTwo , gameQusetion} , dispatch] = useReducer(gameType , initialState)
+let [ {typeOne , typeTwo , gameQusetion} , dispatch] = useReducer(gameType , initialState)
 
 
 function gameType(state , action){
+switch(action.type){
+  case 'gameTypeOne':
+    return{...state, typeOne: true , typeTwo: false , gameQusetion: false}
+  case 'gameTypeTwo' :
+    return{...state, typeOne: false , typeTwo: true , gameQusetion: false}
 
 }
+
 
 export default function Game() {
   return (
-    <>
-        {gameQusetion ? <ChooseTypeGame/> : console.log('hi')}
-        
-    </>
+    <div>Game</div>
   )
 }
+
+
+
+
