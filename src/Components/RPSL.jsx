@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function RPSL() {
   return (
-    <div>RPSL</div>
+    <div>ROCK PAPER SCISSORS SPOCK LIZARD</div>
   )
 }
