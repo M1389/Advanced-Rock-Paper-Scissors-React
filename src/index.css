@@ -28,3 +28,23 @@
 .main-page{
   background-image: var(--background-gradient);
 }
+
+.grayt{
+  color: var(--Header-Outline);
+}
+
+.bluet{
+  color: var(--Score-Text);
+}
+
+.hand-gradient{
+  background-image: var(--Paper-Gradient);
+}
+
+.rock-gradient{
+  background-image: var(--Rock-Gradient);
+}
+
+.scissors-gradient{
+  background-image: var(--Scissors-Gradient);
+}
