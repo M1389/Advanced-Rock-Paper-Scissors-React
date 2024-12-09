@@ -1,13 +1,13 @@
 import React from 'react'
 
-export default function RPSplayground({dispatch}) {
+export default function RPSplayground({dispatch , resShow}) {
   return (
     <>
         <div className='w-full '>
             <div className='w-[80%]  mx-auto flex items-center justify-center py-[50px]'>
                 <div className='relative'>
                     <img src="./assets/images/bg-triangle.svg" alt="Game-triangle"/>
-                    <div className='hand-gradient  absolute top-[-20px] left-[-20px] w-[120px] h-[120px] rounded-full flex items-center justify-center cursor-pointer'>
+                    <div onClick={()=>resShow(true)} className='hand-gradient  absolute top-[-20px] left-[-20px] w-[120px] h-[120px] rounded-full flex items-center justify-center cursor-pointer'>
                         <div className=' bg-white w-[80%] h-[80%] rounded-full flex items-center justify-center'>
                             <img onClick={()=>dispatch({type: 'paper', payload: 'paper'})} className='bg-white w-[70%] h-[70%] p-3' src="./assets/images/icon-paper.svg" alt="paper" />
                         </div>

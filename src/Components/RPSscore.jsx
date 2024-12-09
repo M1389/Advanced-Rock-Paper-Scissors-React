@@ -9,7 +9,7 @@ export default function RPSscore({score}) {
             </div>
             <div className='bg-white flex flex-col items-center justify-between px-[45px] py-[10px] rounded-xl'>
                 <p className='bluet text-[30px] font-semibold'>score</p>
-                <h2 className='grayt text-[55px] font-bold'>12</h2>
+                <h2 className='grayt text-[55px] font-bold'>{score}</h2>
             </div>
         </div>
     </>
