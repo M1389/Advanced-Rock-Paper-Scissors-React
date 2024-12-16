@@ -4,7 +4,7 @@ export default function RPSLresults({resShowTwo, loserWinnerTwo , computerMoveTw
     
     
     return (
-    <div className=' w-[70%] h-[100%] mx-auto flex justify-around items-center px-4 py-[30px]'>
+    <div className=' w-[70%] h-[100%] mx-auto flex justify-around items-center px-4 py-[30px] flex-wrap'>
         <div className={`${playerMoveTwo=='rock'? 'rock-gradient': playerMoveTwo=='paper'? 'hand-gradient': playerMoveTwo=='scissors'? 'scissors-gradient': playerMoveTwo=='lizard'? 'lizard-gradient': 'spock-gradient'} relative w-[220px] h-[220px] rounded-full flex items-center justify-center cursor-pointer z-10`}>
             <div className={`${loserWinnerTwo=='win'? 'afterEffect' : ''} bg-white w-[80%] h-[80%] rounded-full flex items-center justify-center`}>
                 <img onClick={()=>dispatch({type: 'paper', payload: 'paper'})} className='bg-white w-[70%] h-[70%] p-3' src={`./assets/images/${playerMoveTwo=='rock'? 'icon-rock.svg': playerMoveTwo=='paper'? 'icon-paper.svg':playerMoveTwo=='scissors'? 'icon-scissors.svg': playerMoveTwo=='lizard'? 'icon-lizard.svg' : 'icon-spock.svg'}`} alt="paper" />

@@ -4,7 +4,7 @@ export default function RPSresults({resShow, loserWinner , computerMove , player
     
   
     return (
-    <div className=' w-[70%] h-[100%] mx-auto flex justify-around items-center px-4 py-[30px]'>
+    <div className=' w-[70%] h-[100%] mx-auto flex justify-around items-center px-4 py-[30px] flex-wrap'>
         <div className={`${playerMove=='rock'? 'rock-gradient': playerMove=='paper'? 'hand-gradient': 'scissors-gradient'} relative w-[220px] h-[220px] rounded-full flex items-center justify-center cursor-pointer z-10`}>
             <div className={`${loserWinner=='win'? 'afterEffect' : ''} bg-white w-[80%] h-[80%] rounded-full flex items-center justify-center`}>
                 <img onClick={()=>dispatch({type: 'paper', payload: 'paper'})} className='bg-white w-[70%] h-[70%] p-3' src={`./assets/images/${playerMove=='rock'? 'icon-rock.svg': playerMove=='paper'? 'icon-paper.svg': 'icon-scissors.svg'}`} alt="paper" />
