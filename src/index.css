@@ -49,6 +49,14 @@
   background-image: var(--Scissors-Gradient);
 }
 
+.spock-gradient{
+  background-image: var(--Spock-Gradient);
+}
+
+.lizard-gradient{
+  background-image: var(--Lizard-Gradient);
+}
+
 
 
 .afterEffect::before{

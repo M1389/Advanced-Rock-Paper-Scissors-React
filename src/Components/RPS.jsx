@@ -92,9 +92,7 @@ export default function RPS() {
         default:
           console.log('hi')
       }
-      console.log(playerMove , computerMove)
-      console.log(playerScore)
-      console.log(setWinner)
+      
   },[playerMove , computerMove])
 
 
