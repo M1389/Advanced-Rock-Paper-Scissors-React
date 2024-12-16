@@ -2,6 +2,7 @@ import React, { useEffect, useReducer, useState } from 'react'
 import RPSscore from './RPSscore'
 import RPSplayground from './RPSplayground'
 import RPSresults from './RPSresults'
+import RPSLrules from './RPSLrules'
 
 export default function RPS() {
   
@@ -109,6 +110,7 @@ export default function RPS() {
     
     <>
       <div className='main-page w-full h-[112vh] py-[30px] flex flex-col justify-between'>
+        <RPSLrules game={'RPS'}/>
         <RPSscore score={playerScore}/>
         {showRes? <RPSresults resShow={resShow} loserWinner={setWinner} computerMove={computerMove} playerMove={playerMove} /> : <RPSplayground dispatch={dispatch} resShow={resShow}/>}
       </div>

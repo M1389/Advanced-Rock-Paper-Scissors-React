@@ -4,6 +4,7 @@ import RPSLplayground from './RPSLplayground';
 import RPSLresults from './RPSLresults';
 
 import { Container } from 'postcss'
+import RPSLrules from './RPSLrules';
 
 export default function RPSL() {
   
@@ -191,6 +192,7 @@ export default function RPSL() {
     
     <>
       <div className='main-page w-full h-[112vh] py-[30px] flex flex-col justify-between'>
+        <RPSLrules game={'RPSL'} />
         <RPSLscore score={playerScoreTwo}/>
         {showResTwo? <RPSLresults resShowTwo={resShowTwo} loserWinnerTwo={setWinnerTwo} computerMoveTwo={computerMoveTwo} playerMoveTwo={playerMoveTwo}/> : <RPSLplayground dispatch={dispatch} resShowTwo={resShowTwo}/>}
       </div>
